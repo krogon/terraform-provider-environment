@@ -1,0 +1,18 @@
+---
+layout: ""
+page_title: "Provider: Environment - Datasources"
+description: |-
+  The Environment provider maps Shell environment variables to Terraform Datasources.
+---
+
+# Environment Provider - Datasources
+
+After declaring the Environment provider, you can define as many Terraform Datasources as Environment variables you need to use.
+You can also define a Datasource that will return a list of Environment variables.
+Mark the Datasource as sensitive if you don't want the value of the Environment variable to be displayed during plan/apply.
+
+## Example Usage
+
+{{tffile "examples/data-sources/environment_variables/data-source.tf"}}
+
+{{ .SchemaMarkdown | trimspace }}
